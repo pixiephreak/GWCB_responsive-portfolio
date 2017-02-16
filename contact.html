@@ -1,0 +1,56 @@
+<!-- TO-DO: Validate HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>basic-portfolio &#x21e8; Contact</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://use.fontawesome.com/bdf18541d4.js"></script>
+</head>
+	<!-- div .container used for footer styling causes html validation error -->
+	<div id="container">
+		<body id="body">
+			<header id="header">
+				<nav>
+					<ul>
+						<!-- h1 not allowed as child of ul -->
+						<h1 id="name">Jane Claire</h1>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact<span>|</span> </a></li>
+						<li><a href="index.html">About<span>|</span></a></li>
+					</ul>
+				</nav>
+			</header>
+				<section class="group">
+					<div id="content">
+						<h1>Contact</h1>
+							<form action="action_page.php">
+							  Name:<br>
+							  <input class="input-box" type="text" name="name" value="Juan García Sánchez">
+							  <br>
+							  Email:<br>
+							  <input class="input-box" type="text" name="e-mail" value="you@youraddress.com">
+							  <br>
+							  Message:<br>
+							  <input class="input-box" id="message" type="text" name="e-message" value="">
+							  <br><br>
+							  <input class="submit" id="submit" type="submit" value="Submit">
+							</form>
+					</div>
+					<div id="social">
+						<h2 class="content-inner">Connect with Me</h2>
+							<div id="social-icons">
+								<a href="https://github.com/pixiephreak"><i class="fa fa-github-square fa-3x social-icon" id="github" aria-hidden="true"></i></a>
+								<a href="https://www.linkedin.com/in/jane-claire-remick/"><i class="fa fa-linkedin-square fa-3x social-icon" id="linkedin" aria-hidden="true"></i></a>
+								<a href="http://stackoverflow.com/users/6055136/j-c/"><i class="fa fa-stack-overflow fa-1x social-icon" id="stackoverflow" aria-hidden="true"></i></a>
+							</div>
+					</div>
+				</section>
+				<footer id="footer">
+					<div class="copyright"><small>&copy; Copyright 2017 Jane Claire</small></div>
+				</footer>
+		</body>
+	</div>
+</html>

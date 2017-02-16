@@ -1,0 +1,246 @@
+/*Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+Fonts:
+For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.*/
+*{
+	margin: 0;
+}
+
+
+/*set height for sticky header*/
+html,body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/ps_neutral/ps_neutral_@2X.png");
+	padding: 0;
+	height: 100%;
+	color: #777;
+}
+
+/*set min-height and position for sticky header*/
+#container {
+   min-height:125%;
+   position:relative;
+}
+
+
+/*hardcode padding for sticky header*/
+#body {
+	padding-bottom: 5em; /*height of foot*/
+}
+
+
+/*hardcode footer height for sticky header(same or < than #body bottom padding*/
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 5em;
+	background: #666;
+}
+
+header {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+footer {
+	clear: both;
+	background-color: #666;
+	color: #ccc;
+	border-top: .5em solid  #4aaaa5;
+	height: 5em;
+}
+
+.copyright {
+	font-size: .75em;
+	width: 15em;
+	margin: 2em auto;
+}
+
+.group {
+	margin-top: 4em;
+	height: 100%;
+	margin: 4em;
+}
+
+.group div{
+	background-color: #fff;
+	border: .1em solid #ddd;
+	padding: 3em;
+
+}
+
+h1, h2 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em
+}
+
+.group h1, h2 {
+	color: #4aaaa5;
+	border-bottom: .1 solid #ccc;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+#content {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+
+}
+
+#content img {
+	float: left;
+	padding: 0 2em 1.5em 0;
+}
+
+#content p {
+	line-height: 2em;
+}
+
+/*overflow hidden causes this elem to occupy whole width (block). why?*/
+#content-portfolio {
+	width: 40%;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+}
+
+#content-portfolio div {
+	width: 50%;
+	border: 0;
+	padding: 0;
+	float: left;
+}
+
+#content-portfolio span {
+	background-color: #4aaaa5;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+	bottom: 60px;
+
+}
+
+#social {
+	width: 15%;
+	float: right;
+}
+
+#social div {
+	clear: both;
+	border: none;
+	padding: 0;
+
+}
+
+#social-icons {
+	text-align: center;
+	width: 100%;
+
+}
+
+.social-icon {
+	margin: .01em;
+}
+
+nav {
+	background-color: #fff;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+	width: 80%;
+	margin-left: 4em;
+}
+
+li a {
+	margin-top: 3.5em;
+	text-decoration: none;
+	float: right;
+	color: #ccc;
+}
+
+form {
+	color: #666;
+	font-size: 1em;
+}
+
+.input-box {
+	color: #ccc;
+	padding: 10px;
+	width: 578px;
+	margin: 10px auto;
+
+}
+
+#message {
+	height: 175px;
+}
+
+#submit {
+	border-radius: 0px;
+	color: #fff;
+	background-color: #4aaaa5;
+	font-size: 1em;
+	padding: 10px 15px;
+	border: none;
+}
+
+
+li a span{
+	color: #ccc;
+	background-color: #fff;
+	margin: 20px 18px;
+
+}
+
+
+#name {
+	color: #fff;
+	background-color:  #4aaaa5;
+	float: left;
+	padding: 1.5em;
+	text-decoration: none;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+#github {
+	color: #000;
+	font-size: 2.5em;
+
+}
+
+#linkedin {
+	color: #0077B5;
+	font-size: 2.5em;
+
+}
+
+/*style fa stack overflow to imitate assignment screenshot*/
+#stackoverflow {
+	background-color: #FF9900;
+	color: #fff;
+	border-radius: .5em;
+	position: relative;
+	padding: .575em .6em;
+	font-size: 1em;
+	bottom: .5em;
+}
