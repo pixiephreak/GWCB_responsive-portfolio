@@ -79,6 +79,8 @@ footer {
 
 h1, h2, h3 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: solid .1em #ccc;
+	margin-bottom: .5em;
 }
 
 h1 {
@@ -86,7 +88,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1em
+	font-size: 1.5em
 }
 
 .group h1, h2 {
@@ -118,18 +120,18 @@ h2 {
 	float: left;
 	text-align: center;
 	width: 50%;
+	margin-bottom: 10em;
 }
 
 #content-portfolio div {
-	padding: 0;
+	padding: 1em;
 	border: none;
-	background-color: #4aaaa5;
 }
 
-.figure figcaption {
+#content-portfolio span {
 	position: relative;
 	background-color: #4aaaa5;
-	padding: 1em;
+	padding: 5%;
 	bottom: 4em;
 	color: #fff;
 	font-size: 1em;
@@ -228,6 +230,7 @@ li a span{
 	padding: 1.5em;
 	text-decoration: none;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: none;
 }
 
 #github {
@@ -264,21 +267,87 @@ li a span{
 	#social {
 		width: 90%;
 		float: left;
+		margin-bottom: 30%;
 
 	}
 
 	#social-icons {
 	width: 100%;
-
+	text-align: left;
 }
 
-	#content img {
-		width: 100%;
-		padding: 0 2em 1.5em 0;
-		float: none;
+	/*overflow hidden causes this elem to occupy whole width (block). why?*/
+	#content-portfolio {
+		overflow: hidden;
+		float: left;
+		text-align: center;
+		width: 90%;
+		margin-bottom: 1em;
+
+
+	}
+
+	#content-portfolio div {
+		width: 42%;
+		border: 0;
+		padding: 1em;
+		float: left;
 	}
 
 
+}
 
+@media (max-width: 641px) {
+	#name {
+		float: none;
+		text-align: center;
+	}
+
+	ul {
+		margin-left: 0;
+		width: 100%
+	}
+
+
+	li a {
+		float: right;
+		margin: 1em 3em 1em 0em;
+		overflow: hidden;
+	}
+
+	li a span {
+		margin: 2.5em;
+	}
+
+	#content-portfolio {
+		overflow: hidden;
+		text-align: center;
+		width: 90%;
+		margin-bottom: 5em;
+	}
+
+	#content-portfolio div {
+		padding: 1em;
+		border: none;
+		width: 100%;
+	}
+
+	#content-portfolio span {
+		position: relative;
+		background-color: #4aaaa5;
+		padding: 5%;
+		bottom: 4em;
+		color: #fff;
+		font-size: 1em;
+		font-family: 'Georgia', Times, 'Times New Roman', serif;
+	}
+
+
+	#content-portfolio img {
+		width: 100%;
+		border: 0;
+		padding: 0;
+
+	}
 
 }
