@@ -92,8 +92,8 @@ h2 {
 .group h1, h2 {
 	color: #4aaaa5;
 	border-bottom: .1 solid #ccc;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
 }
 
 #content {
@@ -104,7 +104,7 @@ h2 {
 }
 
 #content img {
-	float: left;
+	width: 100%;
 	padding: 0 2em 1.5em 0;
 }
 
@@ -114,25 +114,33 @@ h2 {
 
 /*overflow hidden causes this elem to occupy whole width (block). why?*/
 #content-portfolio {
-	width: 40%;
 	overflow: hidden;
 	float: left;
 	text-align: center;
+	width: 50%;
 }
 
 #content-portfolio div {
-	width: 50%;
-	border: 0;
 	padding: 0;
-	float: left;
+	border: none;
+	background-color: #4aaaa5;
 }
 
-#content-portfolio span {
-	background-color: #4aaaa5;
-	color: #fff;
-	padding: 20px;
+.figure figcaption {
 	position: relative;
-	bottom: 60px;
+	background-color: #4aaaa5;
+	padding: 1em;
+	bottom: 4em;
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+#content-portfolio img {
+	width: 100%;
+	border: 0;
+	padding: 0;
 
 }
 
@@ -185,9 +193,9 @@ form {
 
 .input-box {
 	color: #ccc;
-	padding: 10px;
-	width: 578px;
-	margin: 10px auto;
+	padding-left: .25em;
+	width: 100%;
+	margin: 1em auto;
 
 }
 
@@ -200,7 +208,7 @@ form {
 	color: #fff;
 	background-color: #4aaaa5;
 	font-size: 1em;
-	padding: 10px 15px;
+	padding: .75em 1em;
 	border: none;
 }
 
