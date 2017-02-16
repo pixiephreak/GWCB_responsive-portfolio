@@ -77,7 +77,7 @@ footer {
 
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
@@ -251,4 +251,34 @@ li a span{
 	padding: .575em .6em;
 	font-size: 1em;
 	bottom: .5em;
+}
+
+@media (max-width: 768px){
+
+	#content {
+		width: 90%;
+		margin-bottom: 2em;
+
+	}
+
+	#social {
+		width: 90%;
+		float: left;
+
+	}
+
+	#social-icons {
+	width: 100%;
+
+}
+
+	#content img {
+		width: 100%;
+		padding: 0 2em 1.5em 0;
+		float: none;
+	}
+
+
+
+
 }
